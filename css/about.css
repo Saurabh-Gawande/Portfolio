@@ -19,10 +19,19 @@
 	transition: 0.5s linear;
 	color: #E94132;
 }
+
 .fa-linkedin:hover{
 	transition: 0.5s linear;
 	background-color: #0274B3;
 }
+.fa-github:hover{
+transition: 0.5s linear;
+background-color: white;
+color: black;
+
+}
+
+
 
 .nav-link:hover{
 	letter-spacing: 10px;
