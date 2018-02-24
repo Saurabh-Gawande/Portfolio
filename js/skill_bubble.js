@@ -1,21 +1,55 @@
-$('.skill').click(function(){
-  $('.gen.hide').addClass('hidden');
-  $('.skill-section').removeClass('hidden');
+// $('.skill').click(function(){
 
-var $body = $('.skill-section.gen');
+//   $('.gen.hide').addClass('hidden');
+//   $('.skill-section').removeClass('hidden');
+
+// var $body = $('.skill-section.gen');
+//   var $bubble = $('<div>');
+//   $bubble.addClass('bubble');
+//   $bubble.css({
+//       'top':  Math.random() * ($body[0].clientHeight),
+//       'left': Math.random() * ($body[0].clientWidth)
+//     });
+//     $('.skill-section').append($bubble);
+
+// // setTimeout(function(){
+// // },2000)
+// setTimeout(function(){
+//   $body.on('click','.bubble', function(){
+//       console.log(this);
+//       $(this).addClass('is-popping');
+//     });
+//   },2000);
+    
+//   $body.on('transitionend','.bubble', function(){
+//   $(this).remove();
+//   });
+//   })
+
+
+jQuery(document).ready(function($){
+  $('.skill').click(function(){
+
+    $('.gen.hide').addClass('hidden');
+      $('.skill-section').removeClass('hidden');
+    setInterval(function(){
+      var $body = $('.skill-section.gen');
   var $bubble = $('<div>');
   $bubble.addClass('bubble');
   $bubble.css({
-      'top':  Math.random() * ($body[0].clientHeight - 100),
-      'left': Math.random() * ($body[0].clientWidth - 100)
-    });
-    $('.skill-section').append($bubble);
-
- $body.on('click','.bubble', function(){
-      $(this).addClass('is-popping');
+      'top':  Math.random() * ($body[0].clientHeight),
+      'left': Math.random() * ($body[0].clientWidth)
     });
     
-  $body.on('transitionend','.bubble', function(){
-    $(this).remove();
+
+    $('.skill-section').append($bubble);
+       
+      $('.bubble').animate({
+          'opacity' : '-=0.7'
+      }, 3000, function(){
+          $(this).remove()
+      }
+      );
+    },500);
   });
-  })
+});
