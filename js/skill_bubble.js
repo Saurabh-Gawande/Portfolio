@@ -1,15 +1,17 @@
-var $body = $('body');
+var $body = $('.gen');
 
 $('html').on('keydown', function (e) {
   var $bubble;
   
   if(e.key == ' ') {
+    console.log($body[0].clientHeight);
+    $('.main').addClass('hidden');
     $bubble = $('<div>');
     $bubble.addClass('bubble');
     $bubble.css({
-      'top':  Math.random() * (document.documentElement.clientHeight - 100),
-      'left': Math.random() * (document.documentElement.clientWidth - 100)
+      'top':  Math.random() * ($body[0].clientHeight - 100),
+      'left': Math.random() * ($body[0].clientWidth - 100)
     });
-    $body.append($bubble);
+    $('.skill').append($bubble);
   }
 });
