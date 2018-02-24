@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="font/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/about.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/chart.css">
 </head>
 
 <body>
@@ -27,7 +28,32 @@
             </div>
     </div>
 
-     <div class="skill-section gen hide hidden"></div>
+     <div class="skill-section gen hide hidden">
+       
+        <button class="chart">View all</button>
+     </div>
+
+
+     <div class="skill-chart gen hide hidden">
+         <div id="skills-chart">
+            <h3 class="chart-title"><span>My skills</span></h3>
+            <ul id="chart-legend">
+              <li id="label01" style="height: 54px;"><span class="legend-label"><strong>Uh?</strong><br>Next question?</span></li>
+              <li id="label02" style="height: 54px;"><span class="legend-label"><strong>Basic</strong>, you can't<br>always win...</span></li>
+              <li id="label03" style="height: 54px;"><span class="legend-label"><strong>Medium</strong>, I'm trying<br>to improve.</span></li>
+              <li id="label04" style="height: 54px;"><span class="legend-label"><strong>High</strong>, <br>I'm pretty good.</span></li>
+              <li id="label05" style="height: 54px;"><span class="legend-label">I'm the <strong>master</strong><br>of the universe.</span></li>
+            </ul>
+            <ul id="chart-data" >
+              <li id="bar01" style="width: 20%;"><div class="data-bar" style="height: 150px;"><span class="data-label" data-abbr="" style="opacity: 1;"><span>UX design</span></span></div></li>
+              <li id="bar02" style="width: 20%;"><div class="data-bar" style="height: 165px;"><span class="data-label" data-abbr="" style="opacity: 1;"><span>html &amp; css</span></span></div></li>
+              <li id="bar03" style="width: 20%;"><div class="data-bar" style="height: 190px;"><span class="data-label" data-abbr="" style="opacity: 1;"><span>javascript</span></span></div></li>
+              <li id="bar09" style="width: 20%;"><div class="data-bar" style="height: 173px;"><span class="data-label" data-abbr="flash" style="opacity: 1;"><span>jquery</span></span></div></li>
+              <li id="bar07" style="width: 20%;"><div class="data-bar" style="height: 158px;"><span class="data-label" data-abbr="" style="opacity: 1;"><span>ES6 &amp; React</span></span></div></li>20 </ul>
+          </div> 
+     </div>
+
+     <!-- -->
 
 
         	<div class="description">
@@ -47,7 +73,7 @@
                   <div class="nav">
                     <a class="nav-link resume" href="https://standardresume.co/aviralsrivastava" target="_blank">RESUME</a> |
                     <a class="nav-link skill" href="#"> MY SKILLS</a> |
-                    <a class="nav-link work" href="#" target="_self">Work</a>
+                    <a class="nav-link work" href="#" target="_self">Work</a> 
                   </div>
         </div>
   </div>
@@ -57,5 +83,6 @@
   <script src="js/fbox.js"></script>
   <script src="js/fbox_move.js"></script>
   <script  src="js/skill_bubble.js"></script>
+  <script  src="js/skill_chart.js"></script>
   </body>
 </html>
