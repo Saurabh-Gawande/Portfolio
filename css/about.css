@@ -1,3 +1,9 @@
+.about {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .quick-links{
 	border-top: 1px solid white;
 	border-bottom: 1px solid white;
@@ -60,6 +66,8 @@ color: black;
 	border: 5px solid #111;
 	box-shadow: 10px 10px 10px #999999;
 	line-height: 30px;
+	/* border: 1px solid yellow; */
+
 }
 
 

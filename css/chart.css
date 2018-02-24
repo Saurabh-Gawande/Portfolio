@@ -2,11 +2,12 @@
  #skills-chart {
      color:white;
     margin-top: 120px;
-    margin-bottom: 100px;
-    width: 638px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative
+    margin-bottom: 50px;
+    width: 538px;
+    margin-left: 10px;
+    margin-right: 10px;;
+    position: relative;
+    /* border: 1px solid red; */
 }
 
 #skills-chart .chart-title {
@@ -54,9 +55,6 @@
     top: 0
 }
 
-.no-svg #skills-chart #chart-legend li {
-    background: 0
-}
 
 #skills-chart #chart-legend .legend-label {
     position: static;
@@ -132,9 +130,6 @@
     margin-top: 54px
 }
 
-.no-svg #skills-chart #chart-data li {
-    background: url('../img/skills-chart-vbar-grid.png') no-repeat 0 100%
-}
 
 #skills-chart #chart-data .data-bar {
     position: absolute;
@@ -143,16 +138,9 @@
     background: url('../images/skills-chart-vbar.svg') no-repeat 50% 0
 }
 
-.no-svg #skills-chart #chart-data .data-bar {
-    background: url('../img/skills-chart-vbar.png') no-repeat 100% 50%
-}
 
 #skills-chart #chart-data .data-bar.bbq {
     background: url('../img/skills-chart-vbar-bbq.svgz') no-repeat 50% 0
-}
-
-.no-svg #skills-chart #chart-data .data-bar.bbq {
-    background: url('../img/skills-chart-vbar-bbq.png') no-repeat 100% 50%
 }
 
 #skills-chart #chart-data .data-label {
