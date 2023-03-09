@@ -27,7 +27,7 @@
 //   })
 
 jQuery(document).ready(function($) {
-  var sArray = ["css", "html", "javascript", "jquery", "bootstrap", "git", "ps", "react", "ajax", "redux"];
+  var sArray = ["css", "html", "javascript", "bootstrap", "git", "react", "redux"];
 
   var uniqueRandoms = [];
   var numRandoms = sArray.length;
